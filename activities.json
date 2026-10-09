@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Lasershooting Indoor",
+    "base_price": 45,
+    "description": "Spannende indoor lasergame in een futuristische arena met neon verlichting. Perfecte teambuilding activiteit voor alle leeftijden.",
+    "default_duration_hours": 1.5
+  },
+  {
+    "name": "Lasershooting Outdoor",
+    "base_price": 50,
+    "description": "Tactische lasershooting in de natuur. Strategische speelvelden met cover en natuurlijke obstakels.",
+    "default_duration_hours": 2
+  },
+  {
+    "name": "Escaperoom Operatie Rood",
+    "base_price": 55,
+    "description": "Spannend escaperoom scenario met mysterieuze raadsels. Tijd om te ontsnappen is beperkt!",
+    "default_duration_hours": 1
+  },
+  {
+    "name": "Escaperoom Tiroler Hütte",
+    "base_price": 55,
+    "description": "Een gezellig berghuisje vol versteckte geheimen. Samenwerken is essentieel om eruit te geraken.",
+    "default_duration_hours": 1
+  },
+  {
+    "name": "Teambuilding Indoor",
+    "base_price": 40,
+    "description": "Interactieve teamactiviteiten binnenshuis. Groepsuitdagingen die samenwerking en communicatie stimuleren.",
+    "default_duration_hours": 2
+  },
+  {
+    "name": "Adventure Teambattle",
+    "base_price": 60,
+    "description": "Intense outdoor teamuitdaging met actiespellen. Teamgeest op het hoogste niveau!",
+    "default_duration_hours": 2.5
+  },
+  {
+    "name": "Bushcraft Survival",
+    "base_price": 65,
+    "description": "Leer survival skills in het bos. Vuur maken, shelter bouwen, en overleven in de natuur.",
+    "default_duration_hours": 3
+  },
+  {
+    "name": "Kids Adventure Kamp",
+    "base_price": 35,
+    "description": "Avontuurlijk kamp speciaal voor kinderen. Spellen, natuur ontdekken, en veel plezier.",
+    "default_duration_hours": 4
+  },
+  {
+    "name": "Birthday Laser",
+    "base_price": 50,
+    "description": "Spectaculaire verjaardagsfeest met lasergames. Inclusief begeleiding en safety gear.",
+    "default_duration_hours": 2
+  },
+  {
+    "name": "Birthday Escaperoom",
+    "base_price": 50,
+    "description": "Onvergetelijk verjaardagsfeest in een escaperoom. Raadsels, plezier en samenzijn.",
+    "default_duration_hours": 1.5
+  },
+  {
+    "name": "Schatteneiland",
+    "base_price": 45,
+    "description": "Schatzoektocht adventure op het eiland. Kaarten, raadsels en versteckte schatten.",
+    "default_duration_hours": 2
+  },
+  {
+    "name": "Hoogteparcours",
+    "base_price": 55,
+    "description": "Spectaculaire hoogteparcours met kabelbanen en touwbruggen. Voor dapperderen!",
+    "default_duration_hours": 2.5
+  },
+  {
+    "name": "Paintball Battle",
+    "base_price": 60,
+    "description": "Intense paintballgevechten in speelvelden vol cover en hindernissen.",
+    "default_duration_hours": 2
+  },
+  {
+    "name": "Zipline Adventure",
+    "base_price": 70,
+    "description": "Adrenaline rush door kabelbanen boven het landschap. Veiligheid gegarandeerd!",
+    "default_duration_hours": 2
+  },
+  {
+    "name": "Corporate Challenge",
+    "base_price": 75,
+    "description": "Premium teambuilding voor bedrijven. Alle activiteiten gecombineerd met professionele begeleiding.",
+    "default_duration_hours": 4
+  }
+]

@@ -483,8 +483,6 @@
 
   <script src="script.js"></script>
   <script>
-    const API_BASE_URL = '/api';
-
     document.addEventListener('DOMContentLoaded', function () {
       loadActivitiesForBooking();
       document.getElementById('preferredDate').min = new Date().toISOString().split('T')[0];
@@ -495,7 +493,7 @@
     async function loadActivitiesForBooking() {
       const select = document.getElementById('activityType');
       try {
-        const res = await fetch(`${API_BASE_URL}/packages`);
+        const res = await fetch('./activities.json');
         if (!res.ok) throw new Error('load fail');
         const activities = await res.json();
         activities.forEach(act => {
@@ -557,21 +555,22 @@
       };
 
       try {
-        const res = await fetch(`${API_BASE_URL}/bookings`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
-        });
-        if (!res.ok) throw new Error('fail');
-        const result = await res.json();
+        // Save booking to localStorage (local storage, no backend needed)
+        const bookings = JSON.parse(localStorage.getItem('bookings') || '[]');
+        data.id = 'BK' + Date.now();
+        data.timestamp = new Date().toISOString();
+        bookings.push(data);
+        localStorage.setItem('bookings', JSON.stringify(bookings));
+        
+        // Show success message
         statusDiv.className = 'bk-status ok';
-        statusDiv.innerHTML = `<strong>&#10003; Reservering ontvangen!</strong><br>We nemen contact op via ${data.customer_email}.<br><small>Nr: ${result.id}</small>`;
+        statusDiv.innerHTML = `<strong>&#10003; Reservering ontvangen!</strong><br>We nemen contact op via ${data.customer_email}.<br><small>Nr: ${data.id}</small>`;
         document.getElementById('bookingForm').reset();
         document.getElementById('estimatedPrice').textContent = '—';
         document.getElementById('activityDescription').classList.remove('show');
         window.scrollTo({ top: 0, behavior: 'smooth' });
         setTimeout(() => { window.location.href = 'index.html'; }, 6000);
-      } catch {
+      } catch (err) {
         statusDiv.className = 'bk-status err';
         statusDiv.textContent = '✗ Er is een fout opgetreden. Bel ons op 0495 67 71 87 of probeer opnieuw.';
       } finally {

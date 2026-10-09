@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out Of Limits — Verleg Je Grenzen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo-wrap">
+        <img src="logo.png" class="nav-logo-img" alt="Out Of Limits" onerror="this.style.display='none'">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#activiteiten">Activiteiten</a></li>
+        <li><a href="#hoe-het-werkt">Hoe het werkt</a></li>
+        <li><a href="#locaties">Locaties</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="tel:+32495677187" class="nav-tel"><i class="fa-solid fa-phone"></i> 0495 67 71 87</a>
+        <a href="booking.html" class="nav-cta">Reserveer Nu</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose"><i class="fas fa-times"></i></button>
+    <ul class="mobile-nav-links">
+      <li><a href="#activiteiten">Activiteiten</a></li>
+      <li><a href="#hoe-het-werkt">Hoe het werkt</a></li>
+      <li><a href="#locaties">Locaties</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="booking.html" class="mobile-nav-cta">Reserveer Nu</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <img
+        src="https://images.pexels.com/photos/28287588/pexels-photo-28287588.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+        alt="Outdoor avontuur"
+        class="hero-img"
+      >
+      <div class="hero-veil"></div>
+    </div>
+    <div class="hero-body">
+      <p class="hero-eyebrow">Zele &amp; Berlare — Oost-Vlaanderen</p>
+      <h1 class="hero-title">Verleg<br><em>Je Grenzen</em></h1>
+      <p class="hero-sub">Lasershooting · Escaperooms · Teambuilding · Vakantiekampen<br>Voor bedrijven, scholen, families &amp; verjaardagen</p>
+      <div class="hero-actions">
+        <a href="booking.html" class="btn-primary">Boek Je Avontuur <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#activiteiten" class="btn-ghost">Bekijk Activiteiten</a>
+      </div>
+    </div>
+    <div class="hero-strip">
+      <div class="hero-strip-item"><strong>500+</strong><span>Groepen per jaar</span></div>
+      <div class="hero-strip-item"><strong>15</strong><span>Activiteiten</span></div>
+      <div class="hero-strip-item"><strong>2</strong><span>Vaste locaties</span></div>
+      <div class="hero-strip-item"><strong>100%</strong><span>Professionele begeleiding</span></div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="container">
+      <p class="intro-tag">Voor wie</p>
+      <h2 class="intro-title">Avontuur voor <em>iedereen</em></h2>
+      <div class="intro-grid">
+        <div class="intro-card">
+          <div class="intro-icon"><i class="fa-solid fa-building"></i></div>
+          <h3>Bedrijven</h3>
+          <p>Teambuilding op maat — indoor of outdoor. Van 10 tot 100+ medewerkers. Versterkt samenwerking en teamgeest.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Scholen</h3>
+          <p>Sportdagen en buitenactiviteiten vol avontuur. Actief en educatief voor elke leeftijdsgroep.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>Particulieren</h3>
+          <p>Vrienden- of familiegroepen op zoek naar een spetterende dag vol actie en plezier.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-icon"><i class="fa-solid fa-cake-candles"></i></div>
+          <h3>Verjaardagen</h3>
+          <p>Onvergetelijk feestje voor kinderen én volwassenen. Lasershooting of escaperoom — jij kiest!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITEITEN -->
+  <section class="activiteiten" id="activiteiten">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="section-tag">Wat we aanbieden</p>
+          <h2>Onze <em>Activiteiten</em></h2>
+        </div>
+        <div class="act-filters">
+          <button class="filter active" data-cat="all">Alles</button>
+          <button class="filter" data-cat="lasershooting">Lasershooting</button>
+          <button class="filter" data-cat="escaperoom">Escaperoom</button>
+          <button class="filter" data-cat="teambuilding">Teambuilding</button>
+          <button class="filter" data-cat="vakantiekamp">Kampen</button>
+          <button class="filter" data-cat="verjaardag">Verjaardag</button>
+        </div>
+      </div>
+
+      <div class="act-grid" id="actGrid">
+
+        <article class="act-card" data-cat="lasershooting">
+          <div class="act-img-wrap">
+            <img src="https://images.pexels.com/photos/31107770/pexels-photo-31107770.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Lasershooting Indoor" loading="lazy" class="act-img">
+            <span class="act-tag indoor">Indoor</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-crosshairs"></i> Lasershooting</p>
+            <h3>Lasershooting Indoor</h3>
+            <p class="act-desc">Professionele arena in Zele. 2u sessie met briefing, 1,5u gamen en pauze. Perfect voor verjaardagen en groepen.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> 2 uur</span>
+              <span><i class="fa-solid fa-users"></i> Min. 10 pers</span>
+              <span><i class="fa-solid fa-tag"></i> v.a. €180</span>
+            </div>
+            <a href="booking.html" class="act-btn">Reserveer <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="lasershooting">
+          <div class="act-img-wrap">
+            <img src="https://images.pexels.com/photos/669290/pexels-photo-669290.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Lasershooting Outdoor" loading="lazy" class="act-img">
+            <span class="act-tag outdoor">Outdoor</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-crosshairs"></i> Lasershooting</p>
+            <h3>Lasershooting Outdoor</h3>
+            <p class="act-desc">Lasershooting in de natuur aan het Donkoeverpark in Berlare. Meer ruimte, meer tactiek. Op aanvraag.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> 2 uur</span>
+              <span><i class="fa-solid fa-users"></i> Tot 24 pers</span>
+              <span><i class="fa-solid fa-tag"></i> Op aanvraag</span>
+            </div>
+            <a href="booking.html" class="act-btn">Info &amp; Boek <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="escaperoom">
+          <div class="act-img-wrap">
+            <img src="https://images.pexels.com/photos/5427434/pexels-photo-5427434.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Escaperoom Operatie Rood" loading="lazy" class="act-img">
+            <span class="act-tag indoor">Indoor</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-lock"></i> Escaperoom</p>
+            <h3>Escaperoom — Operatie Rood</h3>
+            <p class="act-desc">Commandocentrum in quarantaine. Codes breken en 3 wereldsteden redden voor de klok tikt! Gratis drankje bij ontsnapping.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> ±1,5 uur</span>
+              <span><i class="fa-solid fa-users"></i> 4–6 pers</span>
+              <span><i class="fa-solid fa-tag"></i> €100</span>
+            </div>
+            <a href="booking.html" class="act-btn">Reserveer <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="escaperoom">
+          <div class="act-img-wrap">
+            <img src="https://images.pexels.com/photos/16827795/pexels-photo-16827795.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Escaperoom Tiroler Hütte" loading="lazy" class="act-img">
+            <span class="act-tag indoor">Indoor</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-lock"></i> Escaperoom</p>
+            <h3>Escaperoom — Die Tiroler Hütte</h3>
+            <p class="act-desc">Reddingsmissie in de Oostenrijkse Alpen. Bergbeklimmers vermist in sneeuwstorm — achterhaal hun traject voor het te laat is!</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> ±1,5 uur</span>
+              <span><i class="fa-solid fa-users"></i> 4–6 pers</span>
+              <span><i class="fa-solid fa-tag"></i> €100</span>
+            </div>
+            <a href="booking.html" class="act-btn">Reserveer <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="teambuilding">
+          <div class="act-img-wrap">
+            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Teambuilding Indoor" loading="lazy" class="act-img">
+            <span class="act-tag indoor">Indoor</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-handshake"></i> Teambuilding</p>
+            <h3>Teambuilding Formules Indoor</h3>
+            <p class="act-desc">4 formules: TB + Escaperoom, Escaperoom + Lasershooting, Escaperoom only of Lasershooting only. Max 24 personen, 1,5–3 uur.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> 1,5–3 uur</span>
+              <span><i class="fa-solid fa-users"></i> Tot 24 pers</span>
+              <span><i class="fa-solid fa-tag"></i> Op aanvraag</span>
+            </div>
+            <a href="booking.html" class="act-btn">Info &amp; Boek <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="teambuilding">
+          <div class="act-img-wrap">
+            <img src="https://images.pexels.com/photos/15449210/pexels-photo-15449210.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Adventure Teambattle" loading="lazy" class="act-img">
+            <span class="act-tag outdoor">Outdoor</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-trophy"></i> Teambuilding</p>
+            <h3>Adventure Teambattle</h3>
+            <p class="act-desc">Teams strijden met lasershooting, boogschieten, archery tag en teambuildingsgames. Sportief of feel good — op jouw maat.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> ±3 uur</span>
+              <span><i class="fa-solid fa-users"></i> Vanaf 16 pers</span>
+              <span><i class="fa-solid fa-tag"></i> Op aanvraag</span>
+            </div>
+            <a href="booking.html" class="act-btn">Info &amp; Boek <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="teambuilding">
+          <div class="act-img-wrap">
+            <img src="https://images.pexels.com/photos/9303528/pexels-photo-9303528.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Bushcraft Survival" loading="lazy" class="act-img">
+            <span class="act-tag outdoor">Outdoor</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-fire"></i> Teambuilding</p>
+            <h3>Workshop Bushcraft &amp; Survival</h3>
+            <p class="act-desc">Vuur maken, water zuiveren, shelter bouwen, brood bakken. De basisbehoeften van overleven in de natuur — voor groepen.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> Halve dag</span>
+              <span><i class="fa-solid fa-users"></i> Groepen</span>
+              <span><i class="fa-solid fa-tag"></i> Op aanvraag</span>
+            </div>
+            <a href="booking.html" class="act-btn">Info &amp; Boek <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="vakantiekamp">
+          <div class="act-img-wrap">
+            <img src="https://images.pexels.com/photos/9291162/pexels-photo-9291162.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Kids Adventure Kamp" loading="lazy" class="act-img">
+            <span class="act-tag kamp">Zomerkamp</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-tent"></i> Vakantiekamp</p>
+            <h3>Kids Adventure Kamp</h3>
+            <p class="act-desc">5 dagen avontuur: lasershooting, kajak, boogschieten, hoogteparcours, survival en zwemmen. Voor 3e t.e.m. 6e leerjaar. Juli &amp; augustus.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-calendar"></i> Zomer 2026</span>
+              <span><i class="fa-solid fa-users"></i> 3e–6e leerjaar</span>
+              <span><i class="fa-solid fa-tag"></i> v.a. €80</span>
+            </div>
+            <a href="booking.html" class="act-btn">Inschrijven <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="verjaardag">
+          <div class="act-img-wrap">
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=700&h=480&fit=crop&auto=format&q=75" alt="Verjaardagsfeest Lasershooting" loading="lazy" class="act-img">
+            <span class="act-tag verjaardag">Verjaardag</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-cake-candles"></i> Verjaardag</p>
+            <h3>Verjaardagsfeest Lasershooting</h3>
+            <p class="act-desc">Onvergetelijke verjaardag! Pauze voor de traktatie voorzien. Kinderen v.a. €160, volwassenen v.a. €180. Begeleiding inbegrepen.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> 2 uur</span>
+              <span><i class="fa-solid fa-users"></i> Min. 10 pers</span>
+              <span><i class="fa-solid fa-tag"></i> v.a. €160</span>
+            </div>
+            <a href="booking.html" class="act-btn">Reserveer <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="verjaardag">
+          <div class="act-img-wrap">
+            <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=700&h=480&fit=crop&auto=format&q=75" alt="Verjaardagsfeest Escaperoom" loading="lazy" class="act-img">
+            <span class="act-tag verjaardag">Verjaardag</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-cake-candles"></i> Verjaardag</p>
+            <h3>Verjaardagsfeest Escaperoom</h3>
+            <p class="act-desc">Vier je verjaardag in onze escaperoom! Gratis drankje bij ontsnapping. Combineerbaar met lasershooting voor een complete dag.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> ±1,5 uur</span>
+              <span><i class="fa-solid fa-users"></i> 4–12 pers</span>
+              <span><i class="fa-solid fa-tag"></i> v.a. €100</span>
+            </div>
+            <a href="booking.html" class="act-btn">Reserveer <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="verjaardag">
+          <div class="act-img-wrap">
+            <img src="https://images.pexels.com/photos/6034772/pexels-photo-6034772.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Schatteneiland" loading="lazy" class="act-img">
+            <span class="act-tag outdoor">Outdoor</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-map"></i> Verjaardag</p>
+            <h3>Schatteneiland Avontuur</h3>
+            <p class="act-desc">Avontuurlijk verjaardagsfeest in de natuur aan het Donkoeverpark. Speurtocht en teamopdrachten voor echte avonturiers.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> Op maat</span>
+              <span><i class="fa-solid fa-users"></i> Groepen</span>
+              <span><i class="fa-solid fa-tag"></i> Op aanvraag</span>
+            </div>
+            <a href="booking.html" class="act-btn">Info &amp; Boek <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="lasershooting">
+          <div class="act-img-wrap">
+            <img src="https://images.pexels.com/photos/3038343/pexels-photo-3038343.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Verhuur Laserapparatuur" loading="lazy" class="act-img">
+            <span class="act-tag verhuur">Verhuur</span>
+          </div>
+          <div class="act-info">
+            <p class="act-category"><i class="fa-solid fa-box"></i> Verhuur</p>
+            <h3>Verhuur Laserapparatuur</h3>
+            <p class="act-desc">Kidsguns (t.e.m. 4e leerjaar, v.a. €75) of Proguns (professioneel, v.a. €120). Zelf ophalen, briefing inbegrepen. Op dagbasis.</p>
+            <div class="act-meta">
+              <span><i class="fa-regular fa-clock"></i> Dagbasis</span>
+              <span><i class="fa-solid fa-users"></i> Zelf te gebruiken</span>
+              <span><i class="fa-solid fa-tag"></i> v.a. €75</span>
+            </div>
+            <a href="booking.html" class="act-btn">Info &amp; Boek <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOE HET WERKT -->
+  <section class="hoe-het-werkt" id="hoe-het-werkt">
+    <div class="container">
+      <p class="section-tag centered">Zo simpel</p>
+      <h2 class="centered">In 3 stappen naar<br><em>jouw avontuur</em></h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Kies je activiteit</h3>
+          <p>Blader door ons aanbod en kies wat perfect past bij jouw groep, budget en wensen.</p>
+        </div>
+        <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Reserveer online</h3>
+          <p>Vul het boekingsformulier in of bel ons. Wij bevestigen snel en stellen alles op maat samen.</p>
+        </div>
+        <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Verleg je grenzen</h3>
+          <p>Kom langs — alles is voorzien! Jij hoeft alleen maar te genieten van het avontuur.</p>
+        </div>
+      </div>
+      <div class="steps-cta">
+        <a href="booking.html" class="btn-primary">Start Jouw Avontuur <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATIES -->
+  <section class="locaties" id="locaties">
+    <div class="container">
+      <p class="section-tag">Waar we zijn</p>
+      <h2>Twee <em>unieke</em> locaties</h2>
+      <div class="loc-grid">
+
+        <div class="loc-card">
+          <div class="loc-img-wrap">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&h=520&fit=crop&auto=format&q=75" alt="Donkoeverpark Berlare" loading="lazy" class="loc-img">
+            <span class="loc-badge outdoor">Outdoor</span>
+          </div>
+          <div class="loc-body">
+            <h3>Donkoeverpark Berlare</h3>
+            <p class="loc-address"><i class="fa-solid fa-location-dot"></i> Donklaan 123, 9290 Berlare</p>
+            <p>Uitgestrekt natuurdomein aan het Donkmeer. Ideaal voor outdoor teambuilding, lasershooting, survival en vakantiekampen.</p>
+            <ul class="loc-list">
+              <li><i class="fa-solid fa-check"></i> Lasershooting Outdoor</li>
+              <li><i class="fa-solid fa-check"></i> Adventure Teambattle</li>
+              <li><i class="fa-solid fa-check"></i> Bushcraft &amp; Survival</li>
+              <li><i class="fa-solid fa-check"></i> Kids Adventure Kampen</li>
+              <li><i class="fa-solid fa-check"></i> Boogschieten &amp; Archery Tag</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="loc-card">
+          <div class="loc-img-wrap">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=520&fit=crop&auto=format&q=75" alt="Indoor Zele" loading="lazy" class="loc-img">
+            <span class="loc-badge indoor">Indoor</span>
+          </div>
+          <div class="loc-body">
+            <h3>Indoor Locatie Zele</h3>
+            <p class="loc-address"><i class="fa-solid fa-location-dot"></i> Langevelde 1C, 9240 Zele</p>
+            <p>Moderne indoor faciliteit met professionele lasershooting arena en twee volledig uitgeruste escaperooms. Heel het jaar toegankelijk.</p>
+            <ul class="loc-list">
+              <li><i class="fa-solid fa-check"></i> Lasershooting Indoor</li>
+              <li><i class="fa-solid fa-check"></i> Escaperoom "Operatie Rood"</li>
+              <li><i class="fa-solid fa-check"></i> Escaperoom "Tiroler Hütte"</li>
+              <li><i class="fa-solid fa-check"></i> Teambuilding Formules</li>
+              <li><i class="fa-solid fa-check"></i> Verjaardagsfeesten</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="loc-card">
+          <div class="loc-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=75&auto=format&fit=crop" alt="Op Locatie" loading="lazy" class="loc-img">
+            <span class="loc-badge mobiel">Op Locatie</span>
+          </div>
+          <div class="loc-body">
+            <h3>Wij Komen Naar Jou</h3>
+            <p class="loc-address"><i class="fa-solid fa-van-shuttle"></i> Jouw bedrijf, school of locatie</p>
+            <p>Met onze mobiele lasershooting truck brengen we het avontuur overal. Ideaal voor bedrijfsevents en schoolsportdagen.</p>
+            <ul class="loc-list">
+              <li><i class="fa-solid fa-check"></i> Mobiele Lasershooting Truck</li>
+              <li><i class="fa-solid fa-check"></i> Bedrijfsevents</li>
+              <li><i class="fa-solid fa-check"></i> Schoolsportdagen</li>
+              <li><i class="fa-solid fa-check"></i> Private Parties</li>
+              <li><i class="fa-solid fa-check"></i> Volledig op maat</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews">
+    <div class="container">
+      <p class="section-tag centered">Reviews</p>
+      <h2 class="centered">Wat zeggen onze <em>klanten</em>?</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Fantastische teambuilding dag! Onze medewerkers spreken er nog steeds over. Professioneel georganiseerd en een enorm gevarieerd programma."</p>
+          <div class="review-author">
+            <div class="review-avatar">JD</div>
+            <div><strong>Jan Dekeyser</strong><br><small>CEO, Tech Solutions Gent</small></div>
+          </div>
+        </div>
+        <div class="review-card review-featured">
+          <div class="review-stars">★★★★★</div>
+          <p>"De escaperooms zijn geweldig! We zijn met 10 mensen geweest — iedereen vond het schitterend. Super professioneel en héél spannend. We komen zeker terug!"</p>
+          <div class="review-author">
+            <div class="review-avatar">SM</div>
+            <div><strong>Sarah Michiels</strong><br><small>Verjaardag met vriendinnen</small></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Onze schoolgroep had een onvergetelijke sportdag. Alle activiteiten waren perfect afgestemd op de leeftijd. De kinderen waren dolenthousiast!"</p>
+          <div class="review-author">
+            <div class="review-avatar">LV</div>
+            <div><strong>Lieke Van Damme</strong><br><small>Directrice basisschool</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container faq-container">
+      <div class="faq-left">
+        <p class="section-tag">FAQ</p>
+        <h2>Veelgestelde<br><em>vragen</em></h2>
+        <p>Staat jouw vraag er niet bij? Neem contact op.</p>
+        <a href="#contact" class="btn-outline">Contacteer Ons</a>
+      </div>
+      <div class="faq-items" id="faqItems">
+        <div class="faq-item">
+          <button class="faq-btn">Hoe kan ik reserveren? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-ans"><p>Online via ons reservatieformulier, of bel 0495 67 71 87. Je krijgt snel een bevestiging per e-mail.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn">Wat is de minimumleeftijd? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-ans"><p>Lasershooting: aanbevolen vanaf 8 jaar. Escaperooms: best vanaf 12 jaar. Vakantiekampen: minimum 3e leerjaar (±8-9 jaar).</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn">Gaat de activiteit door bij slecht weer? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-ans"><p>Indoor activiteiten altijd. Outdoor bekijken we per situatie — bij hevige regen passen we aan of verschuiven naar een andere datum.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn">Kunnen we activiteiten combineren? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-ans"><p>Absoluut! Combinaties zijn populair: escaperoom + lasershooting, teambattle + bushcraft... Vraag een programma op maat.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn">Zijn er groepskortingen? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-ans"><p>Voor grote groepen (20+) of meerdere activiteiten maken we graag een voorstel op maat. Vraag vrijblijvend een offerte aan.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn">Wat bij annulering? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-ans"><p>Neem tijdig contact op. We zoeken samen naar een oplossing. Verzet van datum is vaak mogelijk conform onze algemene voorwaarden.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-tag">Contact</p>
+      <h2>Klaar om je grenzen<br>te <em>verleggen?</em></h2>
+      <div class="contact-grid">
+
+        <div class="contact-left">
+          <div class="contact-item">
+            <div class="cicon"><i class="fa-solid fa-phone"></i></div>
+            <div><strong>Telefoon</strong><a href="tel:+32495677187">0495 67 71 87</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="cicon"><i class="fa-solid fa-envelope"></i></div>
+            <div><strong>E-mail</strong><a href="mailto:info@outoflimits.be">info@outoflimits.be</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="cicon"><i class="fa-solid fa-location-dot"></i></div>
+            <div><strong>Zetel</strong><span>Plezantstraat 10, 9240 Zele</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="cicon"><i class="fa-brands fa-facebook"></i></div>
+            <div><strong>Facebook</strong><a href="https://www.facebook.com/www.outoflimits.be/" target="_blank" rel="noopener">Out Of Limits</a></div>
+          </div>
+          <div class="contact-reservatie">
+            <h3>Direct online reserveren</h3>
+            <p>Kies een tijdstip en reserveer meteen via onze reservatietool.</p>
+            <a href="https://reservaties.outoflimits.be/" target="_blank" rel="noopener" class="btn-primary">
+              Online Reservatie <i class="fa-solid fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Stuur ons een bericht</h3>
+          <div class="form-row">
+            <div class="fg">
+              <label>Naam</label>
+              <input type="text" name="name" placeholder="Jouw naam" required>
+            </div>
+            <div class="fg">
+              <label>E-mail</label>
+              <input type="email" name="email" placeholder="jouw@email.be" required>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Telefoon</label>
+            <input type="tel" name="phone" placeholder="0495 00 00 00">
+          </div>
+          <div class="fg">
+            <label>Activiteit / Interesse</label>
+            <select name="activity">
+              <option value="">— Kies een activiteit —</option>
+              <option>Lasershooting Indoor</option>
+              <option>Lasershooting Outdoor</option>
+              <option>Escaperoom</option>
+              <option>Teambuilding</option>
+              <option>Vakantiekamp Kids</option>
+              <option>Verjaardagsfeest</option>
+              <option>Verhuur apparatuur</option>
+              <option>Offerte op maat</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>Bericht</label>
+            <textarea name="message" rows="4" placeholder="Groepsgrootte, gewenste datum, extra info..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Verstuur <i class="fa-solid fa-paper-plane"></i></button>
+          <div id="contactStatus" class="form-status"></div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Out Of Limits" class="footer-logo" onerror="this.style.display='none'">
+        <p>Specialist in outdoor en adventure activiteiten in Oost-Vlaanderen. Verleg je grenzen met Out Of Limits!</p>
+        <a href="https://www.facebook.com/www.outoflimits.be/" target="_blank" rel="noopener" class="footer-fb"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+      <div class="footer-col">
+        <h4>Activiteiten</h4>
+        <ul>
+          <li><a href="#activiteiten">Lasershooting</a></li>
+          <li><a href="#activiteiten">Escaperoom</a></li>
+          <li><a href="#activiteiten">Teambuilding</a></li>
+          <li><a href="#activiteiten">Vakantiekampen</a></li>
+          <li><a href="#activiteiten">Verjaardagen</a></li>
+          <li><a href="#activiteiten">Verhuur</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Locaties</h4>
+        <ul>
+          <li><a href="#locaties">Indoor — Zele</a></li>
+          <li><a href="#locaties">Outdoor — Berlare</a></li>
+          <li><a href="#locaties">Op Locatie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="https://www.outoflimits.be/nl/Algemene-voorwaarden/" target="_blank">Algemene Voorwaarden</a></li>
+          <li><a href="mailto:info@outoflimits.be">info@outoflimits.be</a></li>
+          <li><a href="tel:+32495677187">0495 67 71 87</a></li>
+          <li><a href="https://reservaties.outoflimits.be/" target="_blank">Online Reservatie</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Out Of Limits vzw — BTW BE 0875.369.273</span>
+      <span>Plezantstraat 10, 9240 Zele</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

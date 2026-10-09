@@ -769,7 +769,7 @@ p { color: var(--body); line-height: 1.7; }
 .fg input::placeholder, .fg textarea::placeholder { color:rgba(255,255,255,.25); }
 .fg input:focus, .fg select:focus, .fg textarea:focus { border-color:var(--lime); background:rgba(255,255,255,.09); }
 .fg select { cursor:pointer; }
-.fg select option { background:#1a1a18; color:var(--white); }
+.fg select option { background:var(--cream); color:var(--dark); }
 .fg textarea { resize:vertical; }
 .btn-submit {
   width:100%; background:var(--lime); color:var(--dark);
